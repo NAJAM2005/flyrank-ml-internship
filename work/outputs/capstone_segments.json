@@ -1,0 +1,122 @@
+[
+  {
+    "segment": "91-180 | high demand",
+    "n_pages": 1548,
+    "decline_rate": 0.4128,
+    "lift_pp": -3.7351,
+    "clients_above_own": "7/9",
+    "loss_per_page": 3007.1357,
+    "loss_share": 0.3278,
+    "loss_share_without_top_client": 0.3357
+  },
+  {
+    "segment": "181-365 | high demand",
+    "n_pages": 1003,
+    "decline_rate": 0.4756,
+    "lift_pp": 2.5431,
+    "clients_above_own": "3/4",
+    "loss_per_page": 3197.8784,
+    "loss_share": 0.2259,
+    "loss_share_without_top_client": 0.2183
+  },
+  {
+    "segment": "365+ | high demand",
+    "n_pages": 827,
+    "decline_rate": 0.3978,
+    "lift_pp": -5.2319,
+    "clients_above_own": "3/3",
+    "loss_per_page": 2857.8319,
+    "loss_share": 0.1664,
+    "loss_share_without_top_client": 0.0786
+  },
+  {
+    "segment": "181-365 | mid demand",
+    "n_pages": 1306,
+    "decline_rate": 0.5199,
+    "lift_pp": 6.9766,
+    "clients_above_own": "2/4",
+    "loss_per_page": 908.8936,
+    "loss_share": 0.0836,
+    "loss_share_without_top_client": 0.1177
+  },
+  {
+    "segment": "91-180 | mid demand",
+    "n_pages": 1325,
+    "decline_rate": 0.4574,
+    "lift_pp": 0.7216,
+    "clients_above_own": "7/9",
+    "loss_per_page": 849.3079,
+    "loss_share": 0.0793,
+    "loss_share_without_top_client": 0.1204
+  },
+  {
+    "segment": "181-365 | low demand",
+    "n_pages": 1417,
+    "decline_rate": 0.5808,
+    "lift_pp": 13.0662,
+    "clients_above_own": "3/4",
+    "loss_per_page": 345.7325,
+    "loss_share": 0.0345,
+    "loss_share_without_top_client": 0.0582
+  },
+  {
+    "segment": "365+ | mid demand",
+    "n_pages": 603,
+    "decline_rate": 0.3516,
+    "lift_pp": -9.8567,
+    "clients_above_own": "1/3",
+    "loss_per_page": 562.9569,
+    "loss_share": 0.0239,
+    "loss_share_without_top_client": 0.0063
+  },
+  {
+    "segment": "91-180 | low demand",
+    "n_pages": 1041,
+    "decline_rate": 0.4063,
+    "lift_pp": -4.3802,
+    "clients_above_own": "2/7",
+    "loss_per_page": 261.1239,
+    "loss_share": 0.0191,
+    "loss_share_without_top_client": 0.0321
+  },
+  {
+    "segment": "31-90 | high demand",
+    "n_pages": 138,
+    "decline_rate": 0.2391,
+    "lift_pp": -21.1012,
+    "clients_above_own": "0/2",
+    "loss_per_page": 1440.0,
+    "loss_share": 0.014,
+    "loss_share_without_top_client": 0.0119
+  },
+  {
+    "segment": "365+ | low demand",
+    "n_pages": 701,
+    "decline_rate": 0.5235,
+    "lift_pp": 7.3396,
+    "clients_above_own": "1/3",
+    "loss_per_page": 243.7118,
+    "loss_share": 0.012,
+    "loss_share_without_top_client": 0.0006
+  },
+  {
+    "segment": "31-90 | mid demand",
+    "n_pages": 283,
+    "decline_rate": 0.2226,
+    "lift_pp": -22.7527,
+    "clients_above_own": "0/5",
+    "loss_per_page": 438.0283,
+    "loss_share": 0.0087,
+    "loss_share_without_top_client": 0.0116
+  },
+  {
+    "segment": "31-90 | low demand",
+    "n_pages": 358,
+    "decline_rate": 0.2737,
+    "lift_pp": -17.6399,
+    "clients_above_own": "0/5",
+    "loss_per_page": 185.6369,
+    "loss_share": 0.0047,
+    "loss_share_without_top_client": 0.0086
+  }
+]
