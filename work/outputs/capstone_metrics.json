@@ -1,0 +1,148 @@
+{
+  "data": {
+    "lane": "ai_opportunity",
+    "pages_analysed": 10550,
+    "clients": 29,
+    "clients_reported_per_client": 10,
+    "label": "impressions_last_30d < 0.8 * impressions_prev_30d, prev_30d >= 100",
+    "label_rate": 0.4501,
+    "pages_excluded_not_in_engagement_fix": 858,
+    "excluded_decline_rate": 0.669,
+    "included_decline_rate_in_lane": 0.45
+  },
+  "lane_comparison": [
+    {
+      "lane": "decline_recovery",
+      "pages": 56253,
+      "clients": 46,
+      "has_two_windows": true,
+      "usable_pages": 56253.0,
+      "share_declining": 1.0
+    },
+    {
+      "lane": "ranking_lifecycle",
+      "pages": 205749,
+      "clients": 54,
+      "has_two_windows": false,
+      "usable_pages": null,
+      "share_declining": null
+    },
+    {
+      "lane": "engagement_fix",
+      "pages": 33202,
+      "clients": 44,
+      "has_two_windows": false,
+      "usable_pages": null,
+      "share_declining": null
+    },
+    {
+      "lane": "ai_opportunity",
+      "pages": 11571,
+      "clients": 33,
+      "has_two_windows": true,
+      "usable_pages": 11408.0,
+      "share_declining": 0.467
+    }
+  ],
+  "key_overlap_with_ai_opportunity": [
+    {
+      "other_lane": "decline_recovery",
+      "shared_pages": 0,
+      "shared_clients": 0
+    },
+    {
+      "other_lane": "ranking_lifecycle",
+      "shared_pages": 0,
+      "shared_clients": 0
+    },
+    {
+      "other_lane": "engagement_fix",
+      "shared_pages": 10677,
+      "shared_clients": 33
+    }
+  ],
+  "mean_client_auc": {
+    "baseline": 0.5606,
+    "age_only": 0.5298,
+    "old_window+age": 0.5506,
+    "old_window+age+static": 0.5667,
+    "+freshness (sensitivity)": 0.5888
+  },
+  "mean_client_auc_excluding_client_B": {
+    "baseline": 0.5561,
+    "age_only": 0.5231,
+    "old_window+age": 0.5502,
+    "old_window+age+static": 0.5615,
+    "+freshness (sensitivity)": 0.5855
+  },
+  "paired_differences_all_clients": {
+    "old_window+age vs baseline": {
+      "mean_diff": -0.01,
+      "ci95": [
+        -0.0676,
+        0.0451
+      ],
+      "higher_in": "6/10"
+    },
+    "static vs old_window+age": {
+      "mean_diff": 0.0162,
+      "ci95": [
+        -0.0028,
+        0.0374
+      ],
+      "higher_in": "7/10"
+    },
+    "static vs baseline": {
+      "mean_diff": 0.0062,
+      "ci95": [
+        -0.0457,
+        0.0523
+      ],
+      "higher_in": "6/10"
+    },
+    "freshness(sensitivity) vs static": {
+      "mean_diff": 0.022,
+      "ci95": [
+        -0.0132,
+        0.0598
+      ],
+      "higher_in": "7/10"
+    }
+  },
+  "mean_top20_lift_pp": {
+    "baseline": 3.87,
+    "age_only": 6.32,
+    "old_window+age": 5.5,
+    "old_window+age+static": 6.23,
+    "+freshness (sensitivity)": 8.84
+  },
+  "concentration": {
+    "top1pct_of_pages": 0.1978,
+    "top5pct_of_pages": 0.4792,
+    "top10pct_of_pages": 0.6564,
+    "top_loss_client_share_of_loss": 0.4687,
+    "top_loss_client_share_of_pages": 0.372
+  },
+  "capture_top20_share_of_lost_impressions": {
+    "random": 0.2,
+    "baseline": 0.5088,
+    "age_only": 0.2213,
+    "old_window+age": 0.1848,
+    "old_window+age+static": 0.2083,
+    "+freshness (sensitivity)": 0.2214,
+    "demand_only": 0.5613,
+    "expected_loss": 0.5563,
+    "oracle": 0.9005
+  },
+  "persistence_check": {
+    "clients_later_decline_higher_after_earlier_fall": "6/10",
+    "mean_auc_of_negative_momentum": 0.5281
+  },
+  "selection_sensitivity_mean_auc": {
+    "baseline_main": 0.5606,
+    "baseline_full": 0.5518,
+    "static_main": 0.5667,
+    "static_full": 0.5957
+  },
+  "review_budget_top20_share_of_lost_impressions": 0.5642
+}
