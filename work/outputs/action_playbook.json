@@ -1,0 +1,95 @@
+{
+  "purpose": "decision-support triage list; not a prediction of individual pages",
+  "playbook": [
+    {
+      "priority": 1,
+      "segment": "181-365 days, high demand",
+      "action": "REVIEW_FIRST",
+      "evidence (capstone, within-client tiers)": "54.7% decline; 24.9% of lost impressions"
+    },
+    {
+      "priority": 2,
+      "segment": "91-180 days, high demand",
+      "action": "REVIEW_FIRST (by value)",
+      "evidence (capstone, within-client tiers)": "average risk, 32.4% of lost impressions"
+    },
+    {
+      "priority": 3,
+      "segment": "181-365 days, low demand",
+      "action": "BATCH_REVIEW",
+      "evidence (capstone, within-client tiers)": "53.3% decline, only 2.4% of loss"
+    },
+    {
+      "priority": 4,
+      "segment": "365+ days, high demand",
+      "action": "MONITOR",
+      "evidence (capstone, within-client tiers)": "share of loss halves without the top client"
+    },
+    {
+      "priority": 5,
+      "segment": "31-90 days, any demand",
+      "action": "LOW_PRIORITY",
+      "evidence (capstone, within-client tiers)": "17-24 points below base rate"
+    }
+  ],
+  "review_rules": [
+    {
+      "type": "before acting",
+      "rule": "open the page and check it is not already being rewritten or recovering"
+    },
+    {
+      "type": "before acting",
+      "rule": "check the impressions come from relevant queries, not a few odd ones"
+    },
+    {
+      "type": "before acting",
+      "rule": "check the decline is not a seasonal dip seen in the same month last year"
+    },
+    {
+      "type": "never automate",
+      "rule": "rewriting, publishing or deleting a page from a score alone"
+    },
+    {
+      "type": "never automate",
+      "rule": "telling a client a page 'will' decline or that a refresh 'will' lift traffic"
+    },
+    {
+      "type": "never automate",
+      "rule": "using reason codes as proof of cause"
+    }
+  ],
+  "monitoring_triggers": [
+    {
+      "watch": "label rate",
+      "trigger": "moves outside 35%-55% (analysed sample: 45.0%)",
+      "response": "re-check the label and thresholds"
+    },
+    {
+      "watch": "rule vs random",
+      "trigger": "per-client AUC of the rule falls below 0.5 in 3 or more of 10 clients",
+      "response": "stop using the rule for ranking"
+    },
+    {
+      "watch": "lost-impression capture",
+      "trigger": "top 20% of pages finds under 40% of lost impressions (now 50.9% for the rule)",
+      "response": "re-tune the rule"
+    },
+    {
+      "watch": "new data",
+      "trigger": "a new snapshot or a dated warehouse release becomes available",
+      "response": "rebuild features and re-run the comparison"
+    },
+    {
+      "watch": "concentration",
+      "trigger": "one client holds over 50% of lost impressions (now 46.9%)",
+      "response": "report per client, not pooled"
+    }
+  ],
+  "example_queue_size": 30000,
+  "actions": {
+    "LOW_PRIORITY": 14290,
+    "BATCH_REVIEW": 5709,
+    "MONITOR": 5140,
+    "REVIEW_FIRST": 4861
+  }
+}
